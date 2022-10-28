@@ -25,14 +25,14 @@ let pcNumber = Math.floor(Math.random() * 6) + 1;
 let resultNumber = userNumber + pcNumber;
 let resultScanner = resultNumber % 2;
 
-console.log('Hai scelto ' + choice.toLocaleUpperCase());
+console.log('Hai scelto ' + choice);
 console.log('Il tuo numero è ' + userNumber);
 console.log('Il mio numero è ' + pcNumber);
 
-if ((choice == 'pari') && (resultScanner == 0)) {
+if (choice == 'pari' && resultScanner == 0) {
     console.log('Hai vinto!');
-} else if ((choice == 'dispari') && (result == 1)) {
-    console.log('Hai vinto!');
+} else if (choice == 'dispari' && resultScanner != 0) {
+    console.log('Hai vinto0!');
 } else {
     console.log('Hai perso!')
 }
