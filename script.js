@@ -1,5 +1,5 @@
 // Palindromic word
-
+/*
 let word = prompt('Inserisci una parola e ti dirò se è palindroma...');
 let reverseWord = '';
 
@@ -15,12 +15,12 @@ if (word == reverseWord) {
 }else {
     console.log('La parola inserita non è palindroma!');
 }
-
+*/
 
 // Pari o Dispari
 
 let choice = prompt('Pari o Dispari?')
-let userNumber = prompt('Inserisci un numero da 1 a 5...');
+let userNumber = parseInt(prompt('Inserisci un numero da 1 a 5...'));
 let pcNumber = Math.floor(Math.random() * 6) + 1;
 let resultNumber = userNumber + pcNumber;
 let resultScanner = resultNumber % 2;
@@ -29,10 +29,10 @@ console.log('Hai scelto ' + choice);
 console.log('Il tuo numero è ' + userNumber);
 console.log('Il mio numero è ' + pcNumber);
 
-if (choice == 'pari' && resultScanner == 0) {
+if (choice === 'pari' && resultScanner === 0) {
     console.log('Hai vinto!');
-} else if (choice == 'dispari' && resultScanner != 0) {
-    console.log('Hai vinto0!');
+} else if (choice === 'dispari' && resultScanner !== 0) {
+    console.log('Hai vinto!');
 } else {
     console.log('Hai perso!')
 }
